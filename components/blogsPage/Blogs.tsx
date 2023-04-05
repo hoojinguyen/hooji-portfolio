@@ -42,22 +42,30 @@ export default function Blogs() {
     <section className="h-full overflow-y-scroll myScroll">
       <Title name="blogs" />
 
-      <ul className="relative grid grid-cols-1 sm:grid-cols-2 sm:before:block before:hidden vCustomLine before:left-1/2 before:-translate-x-1/2">
-        {filteredBlogs === undefined || networkStatus === NetworkStatus.fetchMore
-          ? new Array(postsPerPage).fill(0).map((_, idx) => <BlogSkeleton key={idx} />)
-          : filteredBlogs.blogs.map((b, idx) => <Blog key={idx} blog={b} />)}
-      </ul>
+      {blogsData && blogsData.blogs.length > 0 ? (
+        <>
+          <ul className="relative grid grid-cols-1 sm:grid-cols-2 sm:before:block before:hidden vCustomLine before:left-1/2 before:-translate-x-1/2">
+            {filteredBlogs === undefined || networkStatus === NetworkStatus.fetchMore
+              ? new Array(postsPerPage).fill(0).map((_, idx) => <BlogSkeleton key={idx} />)
+              : filteredBlogs.blogs.map((b, idx) => <Blog key={idx} blog={b} />)}
+          </ul>
 
-      <div className="px-12 my-12">
-        <Pagination
-          postsPerPage={postsPerPage}
-          currentPage={currentPage}
-          setCurrentPage={setCurrentPage}
-          setSkip={setSkip}
-          setFilteredBlogs={setFilteredBlogs}
-          onLoadMore={fetchMore}
-        />
-      </div>
+          <div className="px-12 my-12">
+            <Pagination
+              postsPerPage={postsPerPage}
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+              setSkip={setSkip}
+              setFilteredBlogs={setFilteredBlogs}
+              onLoadMore={fetchMore}
+            />
+          </div>
+        </>
+      ) : (
+        <h2 className="flex justify-center items-center text-gray-300 text-2xl text-center font-medium mt-5 mb-4 tracking-wide group-hover:text-main-orange transition-all duration-300">
+          No items ...
+        </h2>
+      )}
     </section>
   );
 }

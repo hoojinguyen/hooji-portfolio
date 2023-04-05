@@ -51,7 +51,7 @@ export const menus: MenuData[] = [
     id: 4,
     label: "blog",
     Icon: FaRegNewspaper,
-    Component: DevBlogs,
+    Component: Blogs, //DevBlogs,
   },
   // {
   //   id: 5,
