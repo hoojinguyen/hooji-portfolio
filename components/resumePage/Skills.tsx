@@ -32,7 +32,7 @@ export default function Skills() {
 
       <ul className="grid sm:grid-cols-2 grid-cols-1">
         <li className="pt-6 px-12">
-          <IconTitle title="font-end" Icon={FaReact} />
+          <IconTitle title="front-end" Icon={FaReact} />
           <FrontEnd frontend={data?.skills[0].frontEnd} />
         </li>
         <li className="pt-6 px-12 relative vCustomLine before:left-0 sm:before:block before:hidden">

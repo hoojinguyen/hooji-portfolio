@@ -47,7 +47,7 @@ export default function Works() {
 
   return (
     <div id="scrollableDiv" className="lg:h-full h-[95rem] overflow-y-scroll myScroll">
-      <Title name="works" currentMenu={currentTab} />
+      <Title name="projects" currentMenu={currentTab} />
 
       <InfiniteScroll
         dataLength={worksData.worksConnection.edges.length}
