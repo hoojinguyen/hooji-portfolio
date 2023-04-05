@@ -2,7 +2,7 @@
 
 Please refer to [this](https://dev.to/arafat4693/how-i-built-my-fullstack-and-typesafe-portfolio-website-26ia) article to learn more about the website. Thank you😊
 
-> Here I am using a graphQL CMS called Hygraph. So If you want run this project on your machine, make sure first that your hygraph is completely configured. Or Use this URL to clone the complete Hygraph project, including assets, contents, etc. https://app.hygraph.com/clone/61c44d5d9a2640f39c7a617d3bc6cf60?name=Portfolio
+> Here I am using a graphQL CMS called Hygraph. So If you want run this project on your machine, make sure first that your hygraph is completely configured. You can access here: [CMS](https://portfolio-hooji.vercel.app/)
 
 ---
 
@@ -19,6 +19,8 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Need to create env file and set up some variables to call API from Hygraph
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
