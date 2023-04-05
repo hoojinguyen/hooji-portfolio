@@ -43,7 +43,7 @@ export const menus: MenuData[] = [
   },
   {
     id: 3,
-    label: "works",
+    label: "projects",
     Icon: FaEye,
     Component: Works,
   },
@@ -53,12 +53,12 @@ export const menus: MenuData[] = [
     Icon: FaRegNewspaper,
     Component: DevBlogs,
   },
-  {
-    id: 5,
-    label: "stats",
-    Icon: MdDashboard,
-    Component: Stats,
-  },
+  // {
+  //   id: 5,
+  //   label: "stats",
+  //   Icon: MdDashboard,
+  //   Component: Stats,
+  // },
   {
     id: 6,
     label: "contact",
@@ -186,3 +186,46 @@ export const statisticsData: StatisticsData[] = [
     info: "40+",
   },
 ];
+
+export const skills = {
+  frontend: [
+    {
+      id: 1,
+      title: "HTML5",
+      iconImage: { url: "/svg/html.svg" },
+    },
+    {
+      id: 2,
+      title: "CSS3",
+      iconImage: { url: "/svg/css.svg" },
+    },
+    {
+      id: 3,
+      title: "Javascript",
+      iconImage: { url: "/svg/javascript.svg" },
+    },
+    {
+      id: 4,
+      title: "ReactJS",
+      iconImage: { url: "/svg/react.svg" },
+    },
+    {
+      id: 5,
+      title: "NextJS",
+      iconImage: { url: "/svg/nextJS.svg" },
+    },
+    {
+      id: 6,
+      title: "VueJS",
+      iconImage: { url: "/svg/vue.svg" },
+    },
+    {
+      id: 7,
+      title: "NuxtJS",
+      iconImage: { url: "/svg/nuxtJS.svg" },
+    },
+  ],
+  backend: [],
+  devtools: [],
+  softskills: [],
+};
