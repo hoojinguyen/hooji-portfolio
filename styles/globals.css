@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,7 +17,8 @@
 }
 
 * {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Outfit", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -29,7 +32,7 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 6.5rem;
-  /* background-color: #f5b038; */
+  background-color: #CBB26A;
 }
 
 /* width */
@@ -76,7 +79,7 @@ html {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(246, 184, 70, 0.4) 0%, rgba(246, 184, 70, 0.01) 100%);
+  background: linear-gradient(135deg, rgba(203, 178, 106, 0.4) 0%, rgba(246, 184, 70, 0.01) 100%);
 }
 
 .borderRight::before {
@@ -125,11 +128,11 @@ html {
   height: 100%;
   border-radius: 0.5rem;
   z-index: -1;
-  background: linear-gradient(135deg, rgba(133, 87, 2, 0.4) 0%, rgba(246, 184, 70, 0.01) 100%);
+  background: linear-gradient(135deg, rgba(203, 178, 106, 0.4) 0%, rgba(246, 184, 70, 0.01) 100%);
 }
 
 .overlay {
-  background: linear-gradient(135deg, rgba(133, 87, 2, 0.4) 0%, rgba(246, 184, 70, 0.01) 100%);
+  background: linear-gradient(135deg, rgba(203, 178, 106, 0.4) 0%, rgba(246, 184, 70, 0.01) 100%);
 }
 
 .myShadow {
@@ -175,7 +178,7 @@ html {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(246, 184, 70, 0.4) 0%, rgba(246, 184, 70, 0.01) 100%);
+  background: linear-gradient(135deg, rgba(203, 178, 106, 0.4) 0%, rgba(246, 184, 70, 0.01) 100%);
 }
 
 .quote::before,
@@ -215,7 +218,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(246, 184, 70, 0.4) 0%, rgba(246, 184, 70, 0.01) 100%);
+  background: linear-gradient(135deg, rgba(203, 178, 106, 0.4) 0%, rgba(246, 184, 70, 0.01) 100%);
   z-index: 2;
   opacity: 0;
   transition: all 0.3s ease;
