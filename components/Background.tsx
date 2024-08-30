@@ -74,7 +74,7 @@ const Background = () => {
             },
           },
           color: {
-            value: "#f59e0b",
+            value: "#CBB26A",
             animation: {
               h: {
                 count: 0,
