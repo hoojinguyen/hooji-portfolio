@@ -19,6 +19,8 @@ export default function AboutMe() {
 
   if (loading || data === undefined) return <AboutMeSkeleton />;
 
+  const age: string = (new Date().getFullYear() - new Date("1998-01-01").getFullYear()).toString();
+
   return (
     <div className="px-12 py-10">
       <article className="prose max-w-none prose-h2:mb-2.5 prose-h2:text-[1.6rem] prose-p:text-2xl prose-p:leading-[1.65]">
@@ -26,7 +28,7 @@ export default function AboutMe() {
       </article>
 
       <ul className="location grid grid-cols-1 sm:grid-cols-2 mt-6 gap-y-2">
-        <MyInfo field="age" value="25" />
+        <MyInfo field="age" value={age || "26"} />
         <MyInfo field="residence" value="Vietnam" />
         <MyInfo field="freelance" value="Available" />
         <MyInfo field="address" value="Thu Duc, HCM" />
