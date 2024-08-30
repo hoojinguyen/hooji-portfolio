@@ -1,8 +1,8 @@
 # Docs
+#### This repository was forked from [here](https://github.com/arafat4693/portfolio)
+Please refer to [this](https://dev.to/arafat4693/how-i-built-my-fullstack-and-typesafe-portfolio-website-26ia) article to learn more about the website.
 
-Please refer to [this](https://dev.to/arafat4693/how-i-built-my-fullstack-and-typesafe-portfolio-website-26ia) article to learn more about the website. Thank you😊
-
-> Here I am using a graphQL CMS called Hygraph. So If you want run this project on your machine, make sure first that your hygraph is completely configured. You can access here: [CMS](https://portfolio-hooji.vercel.app/)
+> Here I am using a graphQL CMS called Hygraph. So If you want run this project on your machine, make sure first that your hygraph is completely configured. You can access here: [CMS](https://app.hygraph.com/)
 
 ---
 
